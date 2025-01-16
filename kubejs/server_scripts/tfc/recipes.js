@@ -2524,20 +2524,49 @@ const registerTFCRecipes = (event) => {
     //#region Рецепты порошков
     
     // Удаление рецептов
+
     event.remove({ id: 'tfc:quern/amethyst' })
     event.remove({ id: 'tfc:quern/amethyst_cut' })
+    event.remove({ id: 'tfc:amethyst_cut' })
+
+    event.remove({ id: 'tfc:quern/diamond' })
+    event.remove({ id: 'tfc:quern/diamond_cut' })
+    event.remove({ id: 'tfc:diamond_cut' })
+
+    event.remove({ id: 'tfc:quern/emerald' })
+    event.remove({ id: 'tfc:quern/emerald_cut' })
+    event.remove({ id: 'tfc:emerald_cut' })
+
+    event.remove({ id: 'tfc:quern/lapis_lazuli' })
+    event.remove({ id: 'tfc:quern/lapis_lazuli_cut' })
+    event.remove({ id: 'tfc:lapis_lazuli_cut' })
+
+    event.remove({ id: 'tfc:quern/opal' })
+    event.remove({ id: 'tfc:quern/opal_cut' })
+    event.remove({ id: 'tfc:opal_cut' })
+
+    event.remove({ id: 'tfc:quern/pyrite' })
+    event.remove({ id: 'tfc:quern/pyrite_cut' })
+    event.remove({ id: 'tfc:pyrite_cut' })
+
+    event.remove({ id: 'tfc:quern/ruby' })
+    event.remove({ id: 'tfc:quern/ruby_cut' })
+    event.remove({ id: 'tfc:ruby_cut' })
+
+    event.remove({ id: 'tfc:quern/sapphire' })
+    event.remove({ id: 'tfc:quern/sapphire_cut' })
+    event.remove({ id: 'tfc:sapphire_cut' })
+
+    event.remove({ id: 'tfc:quern/topaz' })
+    event.remove({ id: 'tfc:quern/topaz_cut' })
+    event.remove({ id: 'tfc:topaz_cut' })
+
     event.remove({ id: 'tfc:quern/blaze_rod' })
     event.remove({ id: 'tfc:quern/borax' })
     event.remove({ id: 'tfc:quern/charcoal' })
     event.remove({ id: 'tfc:quern/cinnabar' })
     event.remove({ id: 'tfc:quern/cryolite' })
-    event.remove({ id: 'tfc:quern/diamond' })
-    event.remove({ id: 'tfc:quern/diamond_cut' })
-    event.remove({ id: 'tfc:quern/emerald' })
-    event.remove({ id: 'tfc:quern/emerald_cut' })
     event.remove({ id: 'tfc:quern/graphite' })
-    event.remove({ id: 'tfc:quern/lapis_lazuli' })
-    event.remove({ id: 'tfc:quern/lapis_lazuli_cut' })
     event.remove({ id: 'tfc:quern/normal_bismuthinite' })
     event.remove({ id: 'tfc:quern/normal_cassiterite' })
     event.remove({ id: 'tfc:quern/normal_garnierite' })
@@ -2550,8 +2579,6 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: 'tfc:quern/normal_native_silver' })
     event.remove({ id: 'tfc:quern/normal_sphalerite' })
     event.remove({ id: 'tfc:quern/normal_tetrahedrite' })
-    event.remove({ id: 'tfc:quern/opal' })
-    event.remove({ id: 'tfc:quern/opal_cut' })
     event.remove({ id: 'tfc:quern/poor_bismuthinite' })
     event.remove({ id: 'tfc:quern/poor_cassiterite' })
     event.remove({ id: 'tfc:quern/poor_garnierite' })
@@ -2563,9 +2590,7 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: 'tfc:quern/poor_native_gold' })
     event.remove({ id: 'tfc:quern/poor_native_silver' })
     event.remove({ id: 'tfc:quern/poor_sphalerite' })
-    event.remove({ id: 'tfc:quern/poor_tetrahedrite' })
-    event.remove({ id: 'tfc:quern/pyrite' })
-    event.remove({ id: 'tfc:quern/pyrite_cut' })
+    event.remove({ id: 'tfc:quern/poor_tetrahedrite' })  
     event.remove({ id: 'tfc:quern/raw_limestone' })
     event.remove({ id: 'tfc:quern/rich_bismuthinite' })
     event.remove({ id: 'tfc:quern/rich_cassiterite' })
@@ -2579,17 +2604,10 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: 'tfc:quern/rich_native_silver' })
     event.remove({ id: 'tfc:quern/rich_sphalerite' })
     event.remove({ id: 'tfc:quern/rich_tetrahedrite' })
-    event.remove({ id: 'tfc:quern/ruby' })
-    event.remove({ id: 'tfc:quern/ruby_cut' })
     event.remove({ id: 'tfc:quern/salt' })
     event.remove({ id: 'tfc:quern/saltpeter' })
-    event.remove({ id: 'tfc:quern/sapphire' })
-    event.remove({ id: 'tfc:quern/sapphire_cut' })
     event.remove({ id: 'tfc:quern/sulfur' })
     event.remove({ id: 'tfc:quern/sylvite' })
-    event.remove({ id: 'tfc:quern/topaz' })
-    event.remove({ id: 'tfc:quern/topaz_cut' })
-
     // Добавление рецептов
     global.TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
         event.recipes.gtceu.macerator(`tfg:${element.name}`)             
